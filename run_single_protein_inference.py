@@ -1,4 +1,4 @@
-#!/home/zhangjx/anaconda3/envs/dynamicbind/bin/python
+
 import numpy as np
 import pandas as pd
 
@@ -33,8 +33,8 @@ parser.add_argument('--device', type=int, default=0, help='CUDA_VISIBLE_DEVICES'
 parser.add_argument('--no_inference', action='store_true', default=False, help='used, when the inference part is already done.')
 parser.add_argument('--no_relax', action='store_true', default=False, help='by default, the last frame will be relaxed.')
 parser.add_argument('--movie', action='store_true', default=False, help='by default, no movie will generated.')
-parser.add_argument('--python', type=str, default='/home/zhangjx/anaconda3/envs/dynamicbind/bin/python', help='point to the python in dynamicbind env.')
-parser.add_argument('--relax_python', type=str, default='/home/zhangjx/anaconda3/envs/relax/bin/python', help='point to the python in relax env.')
+parser.add_argument('--python', type=str, default='/opt/conda/envs/py38/bin/python', help='point to the python in dynamicbind env.')
+parser.add_argument('--relax_python', type=str, default='/home/t-kaiyuangao/.conda/envs/relax/bin/python', help='point to the python in relax env.')
 parser.add_argument('-l', '--protein_path_in_ligandFile', action='store_true', default=False, help='read the protein from the protein_path in ligandFile.')
 parser.add_argument('--no_clean', action='store_true', default=False, help='by default, the input protein file will be cleaned. only take effect, when protein_path_in_ligandFile is true')
 parser.add_argument('-s', '--ligand_is_sdf', action='store_true', default=False, help='ligand file is in sdf format.')
@@ -44,6 +44,9 @@ parser.add_argument('--model', type=int, default=1, help='default model version'
 parser.add_argument('--seed', type=int, default=42, help='set seed number')
 parser.add_argument('--rigid_protein', action='store_true', default=False, help='Use no noise in the final step of the reverse diffusion')
 parser.add_argument('--hts', action='store_true', default=False, help='high-throughput mode')
+parser.add_argument('--metrics', action='store_true', default=False, help='eval or not, saved in eval_metrics.csv')
+parser.add_argument('--save_metrics', type=str, default='eval_metrics.csv', help='place to save eval metrics')
+
 
 args = parser.parse_args()
 
@@ -151,7 +154,13 @@ else:
         do(cmd)
         cmd = f"CUDA_VISIBLE_DEVICES={args.device} {python} {script_folder}/esm/scripts/extract.py esm2_t33_650M_UR50D data/prepared_for_esm_{header}.fasta data/esm2_output --repr_layers 33 --include per_tok --truncation_seq_length 10000 --model_dir {script_folder}/esm_models"
         do(cmd)
-        cmd = f"CUDA_VISIBLE_DEVICES={args.device} {python} {script_folder}/inference.py --seed {args.seed} --ckpt {ckpt} {protein_dynamic}"
+        if not args.metrics:
+            print("no metrics.")
+            cmd = f"CUDA_VISIBLE_DEVICES={args.device} {python} {script_folder}/inference.py --seed {args.seed} --ckpt {ckpt} {protein_dynamic}"
+        else:
+            print("metric mode.")
+            cmd = f"CUDA_VISIBLE_DEVICES={args.device} {python} {script_folder}/infer_with_metrics.py --seed {args.seed} --ckpt {ckpt} {protein_dynamic}"
+            cmd += f" --save_metrics {args.save_metrics}"
         cmd += f" --save_visualisation --model_dir {model_workdir}  --protein_ligand_csv {ligandFile_with_protein_path} "
         cmd += f" --esm_embeddings_path data/esm2_output --out_dir {args.results}/{header} --inference_steps {args.inference_steps} --samples_per_complex {args.samples_per_complex} --savings_per_complex {args.savings_per_complex} --batch_size 5 --actual_steps {args.inference_steps} --no_final_step_noise"
         do(cmd)

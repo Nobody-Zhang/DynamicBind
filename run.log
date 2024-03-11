@@ -1,0 +1,216 @@
+run_single_protein_inference.py data/origin-1qg8.pdb data/1qg8_input.csv --savings_per_complex 40 --inference_steps 20 --header test --device 0 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python
+2024_02_27_11_34
+--------------------------------
+
+run_single_protein_inference.py data/origin-1qg8.pdb data/1qg8_input.csv --savings_per_complex 40 --inference_steps 20 --header test --device 0 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p
+2024_02_27_11_44
+--------------------------------
+
+run_single_protein_inference.py data/origin-1qg8.pdb data/1qg8_input.csv --savings_per_complex 40 --inference_steps 20 --header test --device 0 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p
+2024_02_27_11_51
+--------------------------------
+
+run_single_protein_inference.py data/origin-1qg8.pdb data/1qg8_input.csv --savings_per_complex 40 --inference_steps 20 --header test --device 8 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p
+2024_02_27_12_23
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb data/test_imatinib.csv --savings_per_complex 40 --inference_steps 20 --header test --device 8 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p
+2024_02_27_12_57
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb data/test_imatinib.csv --savings_per_complex 40 --inference_steps 20 --header test --device 8 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l
+2024_02_27_12_57
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb data/SETD2.csv --savings_per_complex 40 --inference_steps 20 --header test --device 6 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l
+2024_02_27_13_00
+--------------------------------
+
+run_single_protein_inference.py protein.pdb aft_input.csv --hts --savings_per_complex 3 --inference_steps 20 --header test --device 8 -p -l
+2024_02_27_13_08
+--------------------------------
+
+run_single_protein_inference.py protein.pdb test_pdb.csv --hts --savings_per_complex 3 --inference_steps 20 --header test --device 8 -p -l
+2024_02_27_13_10
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb data/SETD2.csv --savings_per_complex 40 --inference_steps 20 --header test --device 0 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l
+2024_02_27_14_52
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb /home/t-kaiyuangao/Workspace/DynamicBind/data/ligandFile_with_protein_path.csv --savings_per_complex 40 --inference_steps 20 --header test --device 0 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l
+2024_02_27_14_53
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb /home/t-kaiyuangao/Workspace/DynamicBind/data/test_imatinib.csv --savings_per_complex 40 --inference_steps 20 --header test --device 1 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l
+2024_02_27_15_46
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb /home/t-kaiyuangao/Workspace/DynamicBind/data/test_imatinib.csv --savings_per_complex 1 --no_relax --inference_steps 20 --header test --device 1 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l
+2024_02_28_00_36
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb test0.csv --savings_per_complex 1 --no_relax --inference_steps 20 --header test --device 1 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l
+2024_02_28_01_08
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb test0.csv --savings_per_complex 1 --no_relax --inference_steps 20 --header test --device 1 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l
+2024_02_28_01_09
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb test0.csv --savings_per_complex 1 --no_relax --inference_steps 20 --header test --device 1 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l
+2024_02_28_01_19
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb test0.csv --savings_per_complex 1 --no_relax --inference_steps 20 --header test --device 1 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l
+2024_02_28_01_30
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb test0.csv --savings_per_complex 1 --no_relax --inference_steps 20 --header test --device 1 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l
+2024_02_28_01_38
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb test0.csv --savings_per_complex 1 --no_relax --inference_steps 20 --header test --device 1 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l
+2024_02_28_01_42
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb test0.csv --savings_per_complex 1 --no_relax --inference_steps 20 --header test --device 1 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l
+2024_02_28_01_47
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb test0.csv --savings_per_complex 1 --no_relax --inference_steps 20 --header test --device 1 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l
+2024_02_28_01_50
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb test0.csv --savings_per_complex 1 --no_relax --inference_steps 20 --header test --device 1 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l --metrics
+2024_02_28_02_31
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb test0.csv --savings_per_complex 1 --no_relax --inference_steps 20 --header test --device 1 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l --metrics
+2024_02_28_02_51
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb test0.csv --savings_per_complex 1 --no_relax --inference_steps 20 --header test --device 1 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l --metrics
+2024_02_28_02_56
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb test0.csv --savings_per_complex 1 --no_relax --inference_steps 20 --header test --device 1 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l --metrics
+2024_02_28_02_57
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb test0.csv --savings_per_complex 1 --no_relax --inference_steps 20 --header test --device 1 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l --metrics
+2024_02_28_03_05
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb test0.csv --savings_per_complex 1 --no_relax --inference_steps 20 --header test --device 1 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l --metrics
+2024_02_28_03_10
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb test0.csv --savings_per_complex 1 --no_relax --inference_steps 20 --header test --device 1 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l --metrics
+2024_02_28_03_17
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb test0.csv --savings_per_complex 1 --no_relax --inference_steps 20 --header test --device 1 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l --metrics
+2024_02_28_03_22
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb test0.csv --savings_per_complex 1 --no_relax --inference_steps 20 --header test --device 1 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l --metrics
+2024_02_28_03_27
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb test0.csv --savings_per_complex 1 --no_relax --inference_steps 20 --header test --device 1 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l --metrics
+2024_02_28_03_30
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb test0.csv --savings_per_complex 1 --no_relax --inference_steps 20 --header test --device 1 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l --metrics
+2024_02_28_03_53
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb test_pdb.csv --savings_per_complex 1 --no_relax --inference_steps 20 --header test --device 0 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l --metrics
+2024_02_28_03_57
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb /home/t-kaiyuangao/Workspace/DynamicBind/valid_pdb_0.csv --savings_per_complex 40 --inference_steps 20 --header valid0 --device 2 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l
+2024_02_28_05_09
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb /home/t-kaiyuangao/Workspace/DynamicBind/valid_pdb_0.csv --savings_per_complex 1 --inference_steps 20 --header valid0 --device 2 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l --save_metrics eval_valid0.csv
+2024_02_28_05_13
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb /home/t-kaiyuangao/Workspace/DynamicBind/valid_pdb_1.csv --savings_per_complex 1 --inference_steps 20 --header valid0 --device 2 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l --save_metrics eval_valid1.csv
+2024_02_28_05_14
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb /home/t-kaiyuangao/Workspace/DynamicBind/valid_pdb_1.csv --savings_per_complex 1 --inference_steps 20 --header valid1 --device 2 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l --save_metrics eval_valid1.csv
+2024_02_28_05_16
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb /home/t-kaiyuangao/Workspace/DynamicBind/valid_pdb_2.csv --savings_per_complex 1 --inference_steps 20 --header valid2 --device 3 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l --save_metrics eval_valid2.csv
+2024_02_28_05_16
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb /home/t-kaiyuangao/Workspace/DynamicBind/valid_pdb_3.csv --savings_per_complex 1 --inference_steps 20 --header valid3 --device 4 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l --save_metrics eval_valid3.csv
+2024_02_28_05_17
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb /home/t-kaiyuangao/Workspace/DynamicBind/valid_pdb_4.csv --savings_per_complex 1 --inference_steps 20 --header valid4 --device 5 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l --save_metrics eval_valid4.csv
+2024_02_28_05_18
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb /home/t-kaiyuangao/Workspace/DynamicBind/valid_pdb_5.csv --savings_per_complex 1 --inference_steps 20 --header valid5 --device 6 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l --save_metrics eval_valid5.csv
+2024_02_28_05_18
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb /home/t-kaiyuangao/Workspace/DynamicBind/valid_pdb_6.csv --savings_per_complex 1 --inference_steps 20 --header valid6 --device 7 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l --save_metrics eval_valid6.csv
+2024_02_28_05_19
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb /home/t-kaiyuangao/Workspace/DynamicBind/valid_pdb_7.csv --savings_per_complex 1 --inference_steps 20 --header valid7 --device 8 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l --save_metrics eval_valid7.csv
+2024_02_28_05_20
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb /home/t-kaiyuangao/Workspace/DynamicBind/valid_pdb_4.csv --savings_per_complex 1 --inference_steps 20 --header valid4 --device 5 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l --save_metrics eval_valid4.csv
+2024_02_28_06_19
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb /home/t-kaiyuangao/Workspace/DynamicBind/valid_pdb_1.csv --savings_per_complex 1 --inference_steps 20 --header valid1 --device 2 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l --save_metrics eval_valid1.csv --metrics
+2024_02_28_06_25
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb /home/t-kaiyuangao/Workspace/DynamicBind/valid_pdb_4.csv --savings_per_complex 1 --inference_steps 20 --header valid4 --device 5 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l --save_metrics eval_valid4.csv --metrics
+2024_02_28_06_25
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb /home/t-kaiyuangao/Workspace/DynamicBind/valid_pdb_0.csv --savings_per_complex 1 --inference_steps 20 --header valid0 --device 2 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l --save_metrics eval_valid0.csv --metrics
+2024_02_28_06_26
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb /home/t-kaiyuangao/Workspace/DynamicBind/valid_pdb_2.csv --savings_per_complex 1 --inference_steps 20 --header valid2 --device 3 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l --save_metrics eval_valid2.csv --metrics
+2024_02_28_06_28
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb /home/t-kaiyuangao/Workspace/DynamicBind/valid_pdb_3.csv --savings_per_complex 1 --inference_steps 20 --header valid3 --device 4 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l --save_metrics eval_valid3.csv --metrics
+2024_02_28_06_28
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb /home/t-kaiyuangao/Workspace/DynamicBind/valid_pdb_5.csv --savings_per_complex 1 --inference_steps 20 --header valid5 --device 6 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l --save_metrics eval_valid5.csv --metrics
+2024_02_28_06_29
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb /home/t-kaiyuangao/Workspace/DynamicBind/valid_pdb_6.csv --savings_per_complex 1 --inference_steps 20 --header valid6 --device 7 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l --save_metrics eval_valid6.csv --metrics
+2024_02_28_06_29
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb /home/t-kaiyuangao/Workspace/DynamicBind/valid_pdb_7.csv --savings_per_complex 1 --inference_steps 20 --header valid7 --device 8 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l --save_metrics eval_valid7.csv --metrics
+2024_02_28_06_29
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb valid_pdb.csv --savings_per_complex 1 --no_relax --inference_steps 20 --header valid_all --device 9 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l --metrics --save_metrics valid_all.csv
+2024_02_28_06_31
+--------------------------------
+
+run_single_protein_inference.py data/test.pdb /home/t-kaiyuangao/Workspace/DynamicBind/valid_pdb_4.csv --savings_per_complex 1 --inference_steps 20 --header valid4 --device 5 --python /opt/conda/envs/py38/bin/python --relax_python /home/t-kaiyuangao/.conda/envs/relax/bin/python -p -l --save_metrics eval_valid4.csv --metrics
+2024_02_28_06_40
+--------------------------------
+
